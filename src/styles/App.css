@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body, #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.app {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    align-items: stretch;
+    border: 1px solid black;
+}
+
+.side {
+    background: rgb(0, 43, 71);
+    width: 300px;
+    padding: 15px;
+    color: white;
+}
+.side ul > li {
+    list-style: none;
+    padding: 5px 10px
+}
+.side ul > li > a {
+    text-decoration: none;
+    color: rgb(0, 140, 255);
+    font-size: 1.1rem;
+}
+.side ul > li > a:hover {
+    color:rgb(70, 172, 255);
+}
+.side ul > li > a.no-pointer-events {
+    color:rgb(154, 207, 250);
+}
+
+.main {
+    border: 1px solid green;
+    flex: 1 1 auto;
+}
+
+/* Utilies */
+.no-pointer-events {
+    pointer-events: none;
+}

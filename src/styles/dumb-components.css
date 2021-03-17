@@ -1,0 +1,36 @@
+.container {
+    padding: 16px;
+}
+
+.movie-list {
+    border: 1px solid black;
+    padding: 10px;
+    
+}
+
+.movie-item {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    grid-template-areas: 
+        "close img title"
+        "close img rating";
+    align-items: center;
+    gap: 0px 10px;
+}
+
+.movie-item:hover {
+    background-color: blanchedalmond;
+}
+
+.movie-item svg {
+    grid-area: close;
+}
+.movie-item img {
+    grid-area: img;
+}
+.movie-item .movie-name {
+    grid-area: title;
+}
+.movie-item .movie-rating {
+    grid-area: rating;
+}
