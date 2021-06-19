@@ -1,0 +1,76 @@
+.building {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 4px solid black;
+    height: 80%;
+    width: 80%;
+    padding: 10px;
+    margin: 50px auto;
+}
+
+.building-floors {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70%;
+    height: 100%;
+}
+
+.elevator-shaft {
+    border: 1px solid blue;
+    height: 100%;
+    width: 25%;
+    padding: 10px 0px;
+}
+
+.floor {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 10px 0px;   
+    border-radius: 10px;
+    border: 1px solid red;
+    padding: 5px;
+}
+
+.elevator {
+    border: 1px solid green;
+    height: 18%;
+    width: 90%;
+    margin: 0 auto;
+    transition: transform 1s linear;
+}
+
+.elevator-f5 {
+    transform: translateY(calc(145px * 0));
+}
+.elevator-f4 {
+    transform: translateY(calc(145px * 1));
+}
+.elevator-f3 {
+    transform: translateY(calc(145px * 2));
+}
+.elevator-f2 {
+    transform: translateY(calc(145px * 3));
+}
+.elevator-f1 {
+    transform: translateY(calc(145px * 4));
+}
+
+.elevator-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+/* /////////////////////////////////// */
+
+.floor-queue-container {
+    margin: 0 auto;
+    border: 5px dashed orange;
+    width: 80%;
+    height: 100px;
+    text-align: center;
+    font-size: 1.9em;
+}

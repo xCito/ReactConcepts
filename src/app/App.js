@@ -1,9 +1,10 @@
 import React from 'react';
 import CustomHooks from '../custom-hooks/CustomHooks';
+import ContextDesign from '../context-design-1/ContextDesign';
 import DumbComponents from '../dumb-components/DumbComponents';
 import Main from './Main';
 import SideNav from './SideNav';
-import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
+import 'font-awesome/css/font-awesome.min.css';
 import './../styles/App.css';
 
 
@@ -11,6 +12,7 @@ function App() {
     const routes = [
         {path: "/DumbComponents", title: "Dumb Components", component: <DumbComponents />},
         {path: "/CustomHooks", title: "Custom Hooks", component: <CustomHooks />},
+        {path: "/ContextDesign", title: "Context Design", component: <ContextDesign />},
         {path: "/1", title: "Page 1", component: null},
         {path: "/2", title: "Page 2", component: null},
         {path: "/3", title: "Page 3", component: null},

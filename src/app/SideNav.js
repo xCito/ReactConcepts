@@ -7,10 +7,10 @@ function SideNav(props) {
     return (
         <div className="side">
             <h3>
-                <NavLink to="/home" activeClassName="no-pointer-events">
-                    <FontAwesomeIcon icon={faHome} className="me-2"/>
+                <NavLink exact to={"/"} activeClassName="no-pointer-events">
+                    <FontAwesomeIcon icon={faHome} className="home-icon"/>
+                    React Concepts
                 </NavLink>
-                React Concepts
             </h3>
             <ul>
                 {props.routes.map( (route, idx) => 

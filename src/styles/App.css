@@ -26,6 +26,17 @@ html, body, #root {
     list-style: none;
     padding: 5px 10px
 }
+
+.side h3 a {
+    text-decoration: none;
+    color: rgb(96, 184, 255);
+    font-size: 1.4rem;
+}
+
+.home-icon {
+    margin-right: 8px;
+}
+
 .side ul > li > a {
     text-decoration: none;
     color: rgb(0, 140, 255);
